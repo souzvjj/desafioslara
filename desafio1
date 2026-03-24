@@ -22,3 +22,4 @@ while contadorusuarios < 6:
         if contadorusuarios < 6:
          nome = input("Digite seu nome: ")
 print("Fim")
+aa
