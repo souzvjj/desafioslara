@@ -1,0 +1,24 @@
+vogais = "aeiou"
+nome = input("Digite seu nome: ")
+contadorletras = 0
+contadorvogais = 0
+contadorusuarios = 0
+while contadorusuarios < 6:  
+        for letra in nome:
+            contadorletras += 1
+            if letra in vogais:
+             contadorvogais += 1
+        while contadorletras <= 2:
+            print("Nome Irreconhecível")
+            nome = input("Digite seu nome: ")
+            contadorletras = 0 
+            for letra in nome:
+             contadorletras += 1
+        print("Nome válidado")
+        print(f"Nome possui {contadorletras} letras, e {contadorvogais} vogais.")
+        contadorusuarios += 1
+        contadorletras = 0
+        contadorvogais = 0
+        if contadorusuarios < 6:
+         nome = input("Digite seu nome: ")
+print("Fim")
